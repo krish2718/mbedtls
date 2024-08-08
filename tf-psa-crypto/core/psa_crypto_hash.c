@@ -298,7 +298,7 @@ psa_status_t mbedtls_psa_hash_update(
 #endif
 #if defined(MBEDTLS_PSA_BUILTIN_ALG_SHA_384)
         case PSA_ALG_SHA_384:
-            ret = mbedtls_sha512_update(&operation->ctx.sha512,
+            ret = mbedtls_sha384_update(&operation->ctx.sha512,
                                         input, input_length);
             break;
 #endif
